@@ -10,6 +10,8 @@
     width: 806px;
     float: left;
     border-style: solid;
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 18px;
 }
 .box2{
     height: 300px;
@@ -18,4 +20,6 @@
     margin-right: 316px;
     border-style: solid;
     text-align: center;
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 18px;
 }
