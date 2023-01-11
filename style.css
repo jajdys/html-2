@@ -3,18 +3,19 @@
     font-size: 14px;
     text-align: center;
     border-style: solid;
+    border-color: black;
 }
 .box1{
-    background-color: green;
     height: 100px;
-    width: 690px;
+    width: 806px;
+    float: left;
+    border-style: solid;
 }
 .box2{
-    background-color: aqua;
-    height: 300px;
-    width: 500px;
-    left: 150px;
-    margin-top: 10px;
-    margin-left: 700px;
+    height: 100px;
+    width: 770px;
+    float: right;
+    margin-right: 316px;
     border-style: solid;
+    text-align: center;
 }
