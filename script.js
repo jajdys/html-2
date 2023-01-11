@@ -27,35 +27,33 @@ function sprawdz(){
      }
  }
  function sprawdz2(){
-     var xd=document.getElementById("Liczba2").value;
+    var licz2=document.getElementById("Liczba2").value;
+    var licz3=document.getElementById("Liczba3").value;
+    let str='';
+    if(licz2=='' || licz3==''){
+        wynik2.innerHTML='Nie podano wartosci';
+    }
+    else if(licz2<1 || licz3<1){
+        wynik2.innerHTML='Liczba jest za mala';
+    }
+    else if(licz2>10 || licz3>10){
+        wynik2.innerHTML='liczba jest za duza';
+    }
+    else if(licz2>=1 && licz2<=10 && licz3>=1 && licz3<=10 && licz2>licz3){
+        for(let i=licz2; i>=licz3;i--){
+           str+=i;
+        }
+        wynik2.innerHTML=str;
+    }
+    else if(licz2>=1 && licz2<=10 && licz3>=1 && licz3<=10 && licz2<licz3){
+        for(var i=licz2; i<=licz3;i++){
+            str += i;
+        }
+        wynik2.innerHTML=str;
+    }
+    else if (licz2==licz3){
+        wynik2.innerHTML='podaj rozne wartosci';
+    }
+}
 
-     var xdd=document.getElementById("Liczba3").value;
-
-     let string='';
-
-     if(xd=='' || xdd==''){
-         wynik1.innerHTML='Nie podano wartosci';
-     }
-     else if(xd<1 || xdd<1){
-         wynik1.innerHTML='Liczba jest za mala';
-     }
-     else if(xd>10 || xdd>10){
-         wynik1.innerHTML='liczba jest za duza';
-     }
-     else if(xd>=1 && xd<=10 && xdd>=1 && xdd<=10 && xd>xdd){
-         for(let i=xd; i>=xdd;i--){
-            string+=i;
-         }
-         wynik1.innerHTML=string;
-     }
-     else if(xd>=1 && xd<=10 && xdd>=1 && xdd<=10 && xd<xdd){
-         for(var i=xd; i<=xdd;i++){
-             string += i;
-         }
-         wynik1.innerHTML=string;
-     }
-     else if (xd==xdd){
-         wynik1.innerHTML='podaj rozne wartosci';
-     }
- }
  
