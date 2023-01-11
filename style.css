@@ -1,0 +1,20 @@
+.header{
+    width: 900px;
+    font-size: 14px;
+    text-align: center;
+    border-style: solid;
+}
+.box1{
+    background-color: green;
+    height: 100px;
+    width: 690px;
+}
+.box2{
+    background-color: aqua;
+    height: 300px;
+    width: 500px;
+    left: 150px;
+    margin-top: 10px;
+    margin-left: 700px;
+    border-style: solid;
+}
